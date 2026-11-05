@@ -6,6 +6,7 @@ import { useWeatherData } from '@/hooks/useWeatherData';
 import { useLanguageState, LanguageProvider } from '@/i18n/LanguageContext';
 import { ControlBar } from '@/components/ControlBar';
 import { WeatherGrid } from '@/components/WeatherGrid';
+import { AiBrief } from '@/components/AiBrief';
 import { translate } from '@/i18n/LanguageContext';
 
 export const Route = createFileRoute('/')({
@@ -52,6 +53,7 @@ function Index() {
                 <CityMap cities={settings.activeCities} tempUnit={settings.tempUnit} />
               </Suspense>
             </ClientOnly>
+            <AiBrief results={data || []} year={settings.year} tempUnit={settings.tempUnit} />
             <WeatherGrid
               results={data || []}
               metrics={settings.activeMetrics}
