@@ -1,0 +1,178 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-weather-hot: hsl(var(--cell-hot));
+  --color-weather-warm: hsl(var(--cell-warm));
+  --color-weather-mild: hsl(var(--cell-mild));
+  --color-weather-cool: hsl(var(--cell-cool));
+  --color-weather-cold: hsl(var(--cell-cold));
+  --color-weather-freezing: hsl(var(--cell-freezing));
+
+  --color-rain-heavy: hsl(var(--rain-heavy));
+  --color-rain-moderate: hsl(var(--rain-moderate));
+  --color-rain-light: hsl(var(--rain-light));
+  --color-rain-dry: hsl(var(--rain-dry));
+
+  --color-wind-strong: hsl(var(--wind-strong));
+  --color-wind-moderate: hsl(var(--wind-moderate));
+  --color-wind-light: hsl(var(--wind-light));
+
+  --color-season-wet: hsl(var(--season-wet));
+  --color-season-dry: hsl(var(--season-dry));
+  --color-season-transition: hsl(var(--season-transition));
+
+  --color-risk-high: hsl(var(--risk-high));
+  --color-risk-moderate: hsl(var(--risk-moderate));
+  --color-risk-low: hsl(var(--risk-low));
+  --color-risk-none: hsl(var(--risk-none));
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: 210 20% 98%;
+  --foreground: 220 20% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 20% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 20% 10%;
+  --primary: 174 62% 40%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 14% 92%;
+  --secondary-foreground: 220 20% 20%;
+  --muted: 220 14% 95%;
+  --muted-foreground: 220 10% 50%;
+  --accent: 174 40% 90%;
+  --accent-foreground: 174 62% 25%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 13% 90%;
+  --input: 220 13% 90%;
+  --ring: 174 62% 40%;
+
+  --cell-hot: 0 85% 60%;
+  --cell-warm: 25 95% 55%;
+  --cell-mild: 45 90% 55%;
+  --cell-cool: 174 50% 50%;
+  --cell-cold: 210 60% 55%;
+  --cell-freezing: 220 50% 65%;
+
+  --rain-heavy: 210 80% 50%;
+  --rain-moderate: 200 60% 60%;
+  --rain-light: 195 40% 75%;
+  --rain-dry: 40 60% 70%;
+
+  --wind-strong: 280 50% 55%;
+  --wind-moderate: 260 35% 65%;
+  --wind-light: 240 20% 80%;
+
+  --season-wet: 210 70% 55%;
+  --season-dry: 40 70% 60%;
+  --season-transition: 170 40% 60%;
+
+  --risk-high: 0 80% 55%;
+  --risk-moderate: 35 90% 55%;
+  --risk-low: 120 40% 55%;
+  --risk-none: 220 10% 85%;
+}
+
+.dark {
+  --background: 225 25% 8%;
+  --foreground: 210 20% 92%;
+  --card: 225 20% 11%;
+  --card-foreground: 210 20% 92%;
+  --popover: 225 20% 11%;
+  --popover-foreground: 210 20% 92%;
+  --primary: 174 62% 45%;
+  --primary-foreground: 225 25% 8%;
+  --secondary: 225 15% 16%;
+  --secondary-foreground: 210 20% 85%;
+  --muted: 225 15% 14%;
+  --muted-foreground: 220 10% 55%;
+  --accent: 174 30% 18%;
+  --accent-foreground: 174 62% 60%;
+  --destructive: 0 62% 40%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 225 15% 18%;
+  --input: 225 15% 18%;
+  --ring: 174 62% 45%;
+
+  --cell-hot: 0 80% 50%;
+  --cell-warm: 25 85% 48%;
+  --cell-mild: 45 80% 45%;
+  --cell-cool: 174 45% 40%;
+  --cell-cold: 210 55% 45%;
+  --cell-freezing: 220 45% 55%;
+
+  --rain-heavy: 210 70% 45%;
+  --rain-moderate: 200 50% 50%;
+  --rain-light: 195 30% 55%;
+  --rain-dry: 40 50% 50%;
+
+  --wind-strong: 280 45% 45%;
+  --wind-moderate: 260 30% 50%;
+  --wind-light: 240 15% 55%;
+
+  --season-wet: 210 60% 45%;
+  --season-dry: 40 60% 48%;
+  --season-transition: 170 35% 45%;
+
+  --risk-high: 0 70% 45%;
+  --risk-moderate: 35 80% 45%;
+  --risk-low: 120 35% 40%;
+  --risk-none: 225 15% 20%;
+}
+
+@layer base {
+  * { border-color: hsl(var(--border)); }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
+
+.scrollbar-thin { scrollbar-width: thin; scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent; }
+.scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: hsl(var(--muted-foreground) / 0.3); border-radius: 3px; }
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
+.city-pin {
+  display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;
+  padding: 2px 8px 2px 4px; border-radius: 9999px; font-size: 12px; font-weight: 600;
+  background: var(--card); color: var(--card-foreground); border: 1px solid var(--border);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.25); width: max-content;
+}
+.city-pin-icon { font-size: 18px; line-height: 1; }
