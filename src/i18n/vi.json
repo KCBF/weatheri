@@ -1,0 +1,106 @@
+{
+  "app": {
+    "title": "Weatheri",
+    "dataSourceFooter": "Nguon du lieu: Open-Meteo.com (API thoi tiet mien phi, ma nguon mo) - Du lieu lich su tu ERA5 - Du bao tuong lai tu mo hinh khi hau CMIP6",
+    "modelLabel": "Mo hinh: {model}"
+  },
+  "controlBar": {
+    "hideControls": "An dieu khien",
+    "showControls": "Hien dieu khien",
+    "cities": "thanh pho",
+    "metrics": "chi so",
+    "settings": "Cai dat",
+    "toggleTheme": "Doi giao dien",
+    "year": "Nam",
+    "projection": "Du bao",
+    "statusLine": "Du lieu thoi gian thuc tu Open-Meteo - {cityCount} thanh pho (toi da {maxCities}) - {dataType}",
+    "climateProjection": "Du bao khi hau",
+    "historicalData": "Du lieu lich su/du bao"
+  },
+  "settings": {
+    "title": "Cai dat",
+    "dataSource": "Nguon du lieu",
+    "dataSourceDesc": "Dang su dung Open-Meteo: mien phi, ma nguon mo, khong can API key.",
+    "climateModel": "Mo hinh khi hau (cho nam tuong lai)",
+    "climateModelDesc": "Mo hinh khi hau CMIP6 cung cap cac du bao khac nhau.",
+    "showTitleHeader": "Hien tieu de",
+    "cookieNote": "Tat ca cai dat duoc luu trong cookie va giu lai qua cac phien.",
+    "resetAll": "Dat lai tat ca",
+    "language": "Ngon ngu"
+  },
+  "apiSources": {
+    "openMeteoFree": "Open-Meteo (Mien phi, khong can API key)",
+    "visualCrossing": "Visual Crossing (Mien phi, can API key) - sap ra mat",
+    "openWeatherMap": "OpenWeatherMap (Mien phi, can API key) - sap ra mat",
+    "weatherApi": "WeatherAPI.com (Tra phi) - sap ra mat",
+    "tomorrowIo": "Tomorrow.io (Tra phi) - sap ra mat"
+  },
+  "citySearch": {
+    "maxCitiesHint": "Toi da {max} thanh pho - xoa bot de them",
+    "searchPlaceholder": "Tim kiem thanh pho tren toan the gioi...",
+    "noCitiesFound": "Khong tim thay thanh pho cho \"{query}\""
+  },
+  "citySelector": {
+    "activeCities": "Thanh pho dang chon ({count}/{max})",
+    "apiCallsPerLoad": "~{calls} lenh goi API moi lan tai",
+    "addCity": "Them thanh pho",
+    "apiLimitsTitle": "Gioi han API Open-Meteo (Mien phi)",
+    "dailyLimit": "Gioi han ngay:",
+    "dailyLimitValue": "10.000 yeu cau/ngay",
+    "rateLimit": "Gioi han toc do:",
+    "rateLimitValue": "600 yeu cau/phut",
+    "costPerCity": "Chi phi moi thanh pho:",
+    "costPerCityValue": "~{cost} lenh goi",
+    "sessionCalls": "Lenh goi phien:",
+    "sessionCallsValue": "{count} phut nay",
+    "maxCitiesWarning": "Toi da {max} thanh pho de khong vuot gioi han. Du lieu cache 30 phut.",
+    "searchPlaceholder": "Tim kiem thanh pho tren toan the gioi...",
+    "noCitiesFound": "Khong tim thay thanh pho cho \"{query}\"",
+    "quickAddPresets": "Them nhanh tu danh sach:",
+    "active": "Dang chon",
+    "remove": "Xoa {city}"
+  },
+  "weatherGrid": {
+    "loading": "Dang tai du lieu thoi tiet tu Open-Meteo...",
+    "loadingCities": "Dang tai {count} thanh pho",
+    "noCities": "Chua chon thanh pho. Them thanh pho trong cai dat.",
+    "collapseAll": "Thu gon tat ca",
+    "expandAll": "Mo rong tat ca",
+    "citiesInfo": "{count} thanh pho - Nhan vao hang de xem chi tiet ngay",
+    "cityMetric": "Thanh pho / Chi so"
+  },
+  "dailyStrip": {
+    "noDailyData": "Khong co du lieu ngay cho {city}",
+    "dailyDataFor": "Du lieu ngay cho {city}",
+    "dailyAvgTemp": "Nhiet do trung binh ngay",
+    "dailyRainfall": "Luong mua ngay",
+    "dailyMaxWind": "Gio toi da ngay"
+  },
+  "legend": {
+    "temp": "Nhiet do:",
+    "rain": "Mua:",
+    "season": "Mua:",
+    "risk": "Rui ro:",
+    "wet": "Am",
+    "dry": "Kho",
+    "trans": "Chuyen",
+    "high": "Cao",
+    "mod": "TB",
+    "low": "Thap",
+    "none": "Khong"
+  },
+  "metrics": {
+    "tempAvg": "Nhiet TB",
+    "tempHigh": "Nhiet cao",
+    "tempLow": "Nhiet thap",
+    "rain": "Luong mua",
+    "rainDays": "Ngay mua",
+    "wind": "Gio",
+    "season": "Am/Kho",
+    "floodRisk": "Ngap lut",
+    "disasterRisk": "Thien tai"
+  },
+  "error": {
+    "fetchData": "Loi tai du lieu: {message}. Mot so thanh pho co the hien du lieu cache hoac trong."
+  }
+}

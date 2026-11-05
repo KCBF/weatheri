@@ -1,0 +1,106 @@
+{
+  "app": {
+    "title": "Weatheri",
+    "dataSourceFooter": "Data source: Open-Meteo.com (free, open-source weather API) - Historical data from ERA5 reanalysis - Future projections from CMIP6 climate models",
+    "modelLabel": "Model: {model}"
+  },
+  "controlBar": {
+    "hideControls": "Hide controls",
+    "showControls": "Show controls",
+    "cities": "cities",
+    "metrics": "metrics",
+    "settings": "Settings",
+    "toggleTheme": "Toggle theme",
+    "year": "Year",
+    "projection": "Projection",
+    "statusLine": "Real-time data from Open-Meteo - {cityCount} cities active (max {maxCities}) - {dataType}",
+    "climateProjection": "Climate projection",
+    "historicalData": "Historical/forecast data"
+  },
+  "settings": {
+    "title": "Settings",
+    "dataSource": "Data Source",
+    "dataSourceDesc": "Currently using Open-Meteo: free, open-source, no API key needed. Historical + CMIP6 climate projections.",
+    "climateModel": "Climate Model (for future years)",
+    "climateModelDesc": "CMIP6 climate models provide different projections. Different models = different future forecasts.",
+    "showTitleHeader": "Show title header",
+    "cookieNote": "All settings are saved in cookies and persist across sessions.",
+    "resetAll": "Reset All Settings",
+    "language": "Language"
+  },
+  "apiSources": {
+    "openMeteoFree": "Open-Meteo (Free, no API key)",
+    "visualCrossing": "Visual Crossing (Free tier, API key required) - coming soon",
+    "openWeatherMap": "OpenWeatherMap (Free tier, API key required) - coming soon",
+    "weatherApi": "WeatherAPI.com (Paid) - coming soon",
+    "tomorrowIo": "Tomorrow.io (Paid) - coming soon"
+  },
+  "citySearch": {
+    "maxCitiesHint": "Max {max} cities - remove one to add",
+    "searchPlaceholder": "Search any city worldwide...",
+    "noCitiesFound": "No cities found for \"{query}\""
+  },
+  "citySelector": {
+    "activeCities": "Active Cities ({count}/{max})",
+    "apiCallsPerLoad": "~{calls} API calls per load",
+    "addCity": "Add City",
+    "apiLimitsTitle": "Open-Meteo API Limits (Free Tier)",
+    "dailyLimit": "Daily limit:",
+    "dailyLimitValue": "10,000 requests/day",
+    "rateLimit": "Rate limit:",
+    "rateLimitValue": "600 requests/min",
+    "costPerCity": "Cost per city:",
+    "costPerCityValue": "~{cost} calls (archive + forecast + climate)",
+    "sessionCalls": "Session calls:",
+    "sessionCallsValue": "{count} this minute",
+    "maxCitiesWarning": "Max {max} cities at once to stay within limits. Data cached 30 min.",
+    "searchPlaceholder": "Search any city worldwide...",
+    "noCitiesFound": "No cities found for \"{query}\"",
+    "quickAddPresets": "Quick add from presets:",
+    "active": "Active",
+    "remove": "Remove {city}"
+  },
+  "weatherGrid": {
+    "loading": "Fetching weather data from Open-Meteo...",
+    "loadingCities": "Loading {count} cities",
+    "noCities": "No cities selected. Add cities in settings.",
+    "collapseAll": "Collapse All",
+    "expandAll": "Expand All",
+    "citiesInfo": "{count} cities - Click city row for daily breakdown",
+    "cityMetric": "City / Metric"
+  },
+  "dailyStrip": {
+    "noDailyData": "No daily data available for {city}",
+    "dailyDataFor": "Daily data for {city}",
+    "dailyAvgTemp": "Daily Avg Temperature",
+    "dailyRainfall": "Daily Rainfall",
+    "dailyMaxWind": "Daily Max Wind"
+  },
+  "legend": {
+    "temp": "Temp:",
+    "rain": "Rain:",
+    "season": "Season:",
+    "risk": "Risk:",
+    "wet": "Wet",
+    "dry": "Dry",
+    "trans": "Trans",
+    "high": "High",
+    "mod": "Mod",
+    "low": "Low",
+    "none": "None"
+  },
+  "metrics": {
+    "tempAvg": "Avg Temp",
+    "tempHigh": "High Temp",
+    "tempLow": "Low Temp",
+    "rain": "Rainfall",
+    "rainDays": "Rain Days",
+    "wind": "Wind",
+    "season": "Wet/Dry",
+    "floodRisk": "Flood Risk",
+    "disasterRisk": "Disaster"
+  },
+  "error": {
+    "fetchData": "Error fetching data: {message}. Some cities may show cached or empty data."
+  }
+}
